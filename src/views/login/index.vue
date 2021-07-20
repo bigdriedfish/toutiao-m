@@ -24,6 +24,7 @@
           :rules="userFormRules.code"
           maxlength="6"
         >
+          <i slot="left-icon" class="toutiao toutiao-yanzhengma"></i>
           <template #button>
             <van-count-down
               v-if="isCountDownShow"
@@ -36,7 +37,7 @@
               round
               native-type="button"
               size="small"
-              type="primary"
+              type="default"
               @click="onSendSms"
               >发送验证码</van-button
             >
@@ -62,7 +63,7 @@ export default {
     return {
       isCountDownShow: false,
       user: {
-        mobile: '',
+        mobile: '15605665032',
         code: ''
       },
       userFormRules: {
